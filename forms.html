@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form creation</title>
+</head>
+<body bgcolor="lightblue" >
+
+
+    <h1 >Form Creation</h1><hr color="red" >
+
+    <form >
+       <lable>Name :</lable> <input type="text" placeholder="Enter your name" required><br><br>
+       <lable>Email :</lable> <input type="email" placeholder="abc@gmail.com"><br><br>
+       <lable>Password :</lable><input type="password" placeholder="Enter your password" minlength="8" maxlength="16"><br><br>
+
+       <lable>Phone Number :</lable><input type="tel" placeholder="Enter your phone number" maxlength="13" minlength="10" value="+91"><br><br>
+       <lable>Enter DOB :</lable><input type="datetime-local"><br><br>
+
+       <fieldset>
+       <legend>Upload Resume </legend><input type="file" size="1mb" type=".doc"><br><br>
+       </fieldset>
+       <br><br>
+       
+       <fieldset>
+          <legend align="center">Gender</legend> <br><br><input type="radio" name="gender" value="male"><lable for="m">Male</lable><br> <br>
+         <input type="radio" name="gender" value="female"><br><lable for="f">Female</lable><br>
+         <input type="radio" name="gender" value="other"><br><lable for="o">Other</lable><br>
+
+      </fieldset>
+       <br><br>
+<fieldset>
+    <legend align="center">Skills</legend><br><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="j">Java</lable><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="js">JavaScript </lable><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="h">HTML</lable><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="c">CSS</lable><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="mo">MongoDB</lable><br>
+      <input type="checkbox" name="Skill" id="j"><lable for="r">React</lable><br>
+
+</fieldset>
+       <br><br>
+<fieldset>
+
+   <legend align="center">Select your State</legend>
+   <select>
+      <option value="">-----Select-----</option>
+      <option value="">Maharashtra</option>
+      <option value="">Gujarat</option>
+      <option value="">Goa</option>
+      <option value="">Madhyapradesh</option>
+      <option value="">Kerala</option>
+
+   </select>
+
+</fieldset>
+<br><br>
+
+   <input type="color"><br><br>
+
+   <fieldset>
+      <legend align="center">Add your comment</legend>
+      <textarea cols="30" rows="5"></textarea>
+   </fieldset><br><br><hr>
+       <input type="submit" value="apply" align="center"><br><br>
+
+    </form>
+
+  
+
+
+
+    
+    
+</body>
+</html>
