@@ -1,0 +1,409 @@
+------------------------Syllabus----------------------
+
+section 1 - Fundamental of Programming language (JS)
+
+Keywords 
+1) Values and variables 
+2) Variables rules 
+3) Datatypes 
+4) Operators 
+5) Flow control statements 
+6) Function in js
+
+section 2 - ESCMA Script
+
+ESCMA introduction 
+1) let and const and their difference 
+2) Function and its types , return keywords
+3) Template literals 
+4) Arrays 
+    introduction
+    problems
+    inbuilt methods
+
+5)Strings 
+    introduction 
+    problems
+    inbuilt methods
+
+6) Others sub topic of ECMA
+    destructures 
+    rest operations
+    spread operations
+    object props 
+
+section 3 - OOPS (Object Oriented Programming System) 
+1)Object
+    why, why, 
+    CRUD -  
+       C - Create
+       R - Read 
+       U - Update
+       D - Delete
+
+2) Math object and its methods
+
+3) Date object and its method 
+
+4) Class
+
+5) Encpsulation
+
+6) Inheritance 
+
+7)How Java script engine is working
+
+    hoisting
+    execution context 
+    scope chain 
+    lexical environment
+    closure
+    call stack 
+
+
+section 4 - DOM (Document object model)
+
+-----------------------------------------------------------------------
+
+section 1 - selecting elements
+
+section 2 - traversing elements
+
+section 3 - manipulations of elements
+
+section 4 - manipulation of attributes  
+
+section 5 - manipulation of style
+
+section 6 - events
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+SECTION 1  
+
+                => Keyword <=
+
+Keywords : keyword are those words which have some predefined meaning in js.
+
+    keyword in javascript should be written in lowercase always.
+
+Variables :- Variables in programming language are used to store the value.
+
+How to craete a variable : using 'var' keyword
+
+ A named memory location which is used to store values for the program is called as variable.
+
+ ----------------------------------------------------------------------------------------------
+
+               => Variable name(identifier) <=
+     
+Example :
+    var myName = "Dinesh"; 
+     
+    var a ; => Declaring a variable = Declarations
+    = 10;   => Initialize a value = initialization
+
+    var x; //declaring
+     
+    x = 10; //initialization
+
+    console.log(x);
+
+    //declaring and initialization variable can be done in single line as well as differnt line.
+
+var x = 10; //declaring and initialization variable can be done in single line.
+
+x = 20; //reinitialize
+
+x = 30; //reinitialize
+
+console.log(x);
+
+// If we assign a new value to already existing variable we call is as Re-initialization.
+
+var x = 40;  //re declaration
+
+// If we create another memory with the  name which is already existing we call it as re declaration.
+
+// Variable Naming Rules :
+
+The 1st characters must be a letter or an understood (_) or an dollar ($).
+you cant use a number as number as the first character.
+
+The rest of the variables name can include any letter, any number, or the underscore or dolor. Cant use any other character, inlcluding spaces.
+
+Variable names are case sensitive. 
+
+No limit to the length of the variable name. 
+
+You cant use one of JavaScript reserved words as variable names.
+
+Use camel case.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                   => Data Types <=
+                                /                    \
+     1.Primitive Data types                           2. Non-Primitive (referred to collectively as Objects)
+       1. Numbers                                         1. Objects
+       2. Strings                                         2. Arrays
+       3. Booleans                                        3. Functions
+       4. undefined
+       5. null
+
+
+            
+// typeof: typeof is an operator in javascript which is used to get the datatype of the value.
+
+Examples:
+
+var x = 109;
+console.log(typeof x);
+
+var y = "abc"; 
+console.log(typeof y);
+
+var z= false;
+console.log(typeof z);
+
+var a = undefined;
+console.log(typeof a);
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+                         =>  Operators <=
+
+Operators are used to do operations on operands.
+
+
+In javascript we have some differnt Operators
+
+1) Arithmatic Operators
+    addition    +
+    subtraction -
+    multiply    *
+    division    /  to get qotient
+    modulus     %  to get remainder
+    exponential **
+
+2) Assignment Operators
+
+Used to assign right side value to left memory
+    assign a value =
+    +=
+    -=
+    *=
+    /=
+    %=
+    **=
+
+    var a = 10;
+var b = 20;
+
+//a=a+b;
+//a+= 30;
+//b-=5;
+//a*=6;
+//a/=2
+a+=b // addition will be done final value will be stored to left memory.
+a-=b // subtraction will be done final value will be stored to left memory.
+a*=b // multiply will be done final value will be stored to left memory.
+a/=b // division will be done final value will be stored to left memory.
+a%=b // modulo will be done final value will be stored to left memory.
+a**=b // exponantial will be done final value will be stored to left memory.
+
+console.log(a);
+
+3) Comparison Operators :- Used to campare the any values to get boolean output.
+    
+    equals to           (==)      checks only values
+    triple equals       (===)     checks values and Datatypes
+    Not equal to        (!=)      checks only values 
+    not double equals   (!==)     checks values and Datatypes
+    greater             (>)       checks LV is greater than RV
+    greater or equal to (>=)      checks LV is greater than or equal to RV
+    lesser              (<)       checks LV is lesser than RV
+    lesser or equal to  (<=)      checks LV is lesser than or equal to RV
+
+4) Logical Operators
+
+It is used to combine multiple boolean value produce one single boolean value.
+
+    AND (&&)  Return true only if all input are true.
+    OR  (||)  Return true if any one input are true.
+    NOT  (!)  Reverse 
+
+
+
+5) Strings Operator
+
+    (+) concatinasion
+
+    Number + Number = Number
+
+    Number + String = String
+
+    Number + Boolean = Number
+
+    Number +  = Not a number (NaN) value => Number(type)
+
+    String + anything = String
+
+    Anything + String = String
+
+    Boolean + Number = Number
+
+    Boolean + String = String
+
+    Boolean + Boolean = Number
+
+    Boolean + Undefined = NaN
+
+
+6) Conditional Operator
+
+    ?
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+5) Flow Control Statements
+
+> Flow control statements we can control the execution flow of statements.
+
+1) DMS -> Decision making statements
+    1)if
+    2)if  else 
+    3)else if  
+    4)Switch
+
+
+2) Looping -> Looping statements
+    1)For loop
+    2)While loop
+    3)Do while loop
+
+Decision making statements
+
+Whenever we want to execute some set of statements based upon some Condition.
+
+syntax
+1)if(Condition)
+{
+    statements;
+}
+
+flow diagram
+                   |
+                < condition > ------false
+                   |                  |
+                   |true              |
+                   |                  |
+               [ if body ]            |
+                                      |
+                 _____________________|                     
+                 |
+
+
+
+when the condition is true if body will be executed or else it will not be executed the if body.
+
+2)if else 
+
+syntax
+if(condition)
+{
+    statements;
+}
+else
+{
+    statements;
+}
+
+
+3) else if 
+syntax
+if(condition)
+{
+    statements;
+}
+else if
+{
+    statements;
+}
+else
+{
+
+}
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Condition operator:
+
+syntax
+
+Condition ? statements1 : statements2;
+
+When the condition is true statements1 is executed, or if it is false statements2 is executed.
+
+Switch Case:
+
+syntax
+Switch(variable)
+{
+    case 1 : start;
+            break;
+    case 2: start;
+            break;
+    case 3: start;
+            break;
+            .
+            .
+            .
+            .
+            .
+    case n: start;
+            break;
+        default : start;
+}
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2)Looping statements 
+
+Whenever we want to execute some set of statements repeatedly for multiple times
+
+1)for loop
+2)while loop
+3)do while loop
+
+1)for loop:
+
+Definition:
+Whenever we know start and end condition clearly we use for loop. For loop will execute the statements untill the end condition becomes false.
+
+syntax:
+for(start condition; end condition; counter)
+{
+    statements;
+}
+
+1) Increment operator ++
+    post increment a++ : Value will be assign -> Increment will done 
+    pre increment ++a :  Increment will done ->   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
