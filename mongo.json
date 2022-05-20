@@ -1,0 +1,68 @@
+[
+    {
+        "name": "shiva",
+        "age":45,
+        "contact":8945121310
+    },
+    {
+        "name": "parvati",
+        "age":40,
+        "contact":89451213415
+    },
+    {
+        "name": "ganesha",
+        "age":20,
+        "contact":8455121310
+    },
+    {
+        "name": "kartikeya",
+        "age":25,
+        "contact":8989121310
+    }
+
+]
+
+[
+{
+    
+    "name" : "ravi",
+    "diseases" : "cancer",
+    "contact" : 9612456310
+},
+{
+   
+    "name" : "kiran",
+    "diseases" : "corona",
+    "contact" : 9645456310
+},
+{
+    
+    "name" : "saurav",
+    "diseases" : "blood cancer",
+    "contact" : 9645456450
+},
+{
+    
+    "name" : "hiral",
+    "diseases" : "brain tumar",
+    "contact" : 9679656450
+},
+{
+    
+    "name" : "gaurav",
+    "diseases" : "metal desorder",
+    "contact" : 9679656445
+},
+{
+    
+    "name" : "babita",
+    "diseases" : "dengue",
+    "contact" : 9079656445
+},
+{
+    
+    "name" : "rohit",
+    "diseases" : "covid",
+    "contact" : 9879656445
+}
+]

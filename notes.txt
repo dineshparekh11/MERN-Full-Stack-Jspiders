@@ -1,409 +1,390 @@
-------------------------Syllabus----------------------
+//27/4/2022
+> DATA -
+> What is the data?
 
-section 1 - Fundamental of Programming language (JS)
+All the raw facts or information is known as DATA 
 
-Keywords 
-1) Values and variables 
-2) Variables rules 
-3) Datatypes 
-4) Operators 
-5) Flow control statements 
-6) Function in js
+> DATABASE -
+> What is DATABASE ?
 
-section 2 - ESCMA Script
+It is a place or medium used to store data in systematic and organized manner.
 
-ESCMA introduction 
-1) let and const and their difference 
-2) Function and its types , return keywords
-3) Template literals 
-4) Arrays 
-    introduction
-    problems
-    inbuilt methods
+> DBMS -
+> What is DBMS?
 
-5)Strings 
-    introduction 
-    problems
-    inbuilt methods
+>DBMS: Data Base Management System
 
-6) Others sub topic of ECMA
-    destructures 
-    rest operations
-    spread operations
-    object props 
+>DBMS is a software used to store, update, manage data in proper manner.
 
-section 3 - OOPS (Object Oriented Programming System) 
-1)Object
-    why, why, 
-    CRUD -  
-       C - Create
-       R - Read 
-       U - Update
-       D - Delete
+>There are three type of DBMS
 
-2) Math object and its methods
+1)Network-DBMS
+2)Hierarchical-DBMS
+3)Relational-DBMS
 
-3) Date object and its method 
+#1 Network-DBMS:
 
-4) Class
+This is one of the type of DBMS where data are stored in Network format
+for ex. Google maps 
 
-5) Encpsulation
+#2 Hierarchical-DBMS:
 
-6) Inheritance 
+This is one of the type of DBMS where data are stored in trees structure
 
-7)How Java script engine is working
+for ex. CEO > CTO > VP > GM > TL > EMPLOYEE
 
-    hoisting
-    execution context 
-    scope chain 
-    lexical environment
-    closure
-    call stack 
+#3 Relational-DBMS:
 
+R-DBMS is very popular DBMS used in market because data are stored in table format which is very easy to fatch the data
 
-section 4 - DOM (Document object model)
+for ex. Student details, Bank details, College details.
 
------------------------------------------------------------------------
+(.)What is MongoDB:
 
-section 1 - selecting elements
+>MongoDB is a platform, document oriented database that provides,
 
-section 2 - traversing elements
+High performance
 
-section 3 - manipulations of elements
+High availability
 
-section 4 - manipulation of attributes  
+High scalability
 
-section 5 - manipulation of style
+Flexible
 
-section 6 - events
+>Mongo DB works on the concept of collection and document. 
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+(.)Why MongoDB ?
 
-SECTION 1  
+> MongoDB stores data in flexible, Json-like documents. 
 
-                => Keyword <=
+> The document model maps to the objects in your application code, making data easy to work.
 
-Keywords : keyword are those words which have some predefined meaning in js.
+> MongoDB is a distributed database at its core, so high availability, horizontal scalling, and Graphics distribution are buit in easy to use.
 
-    keyword in javascript should be written in lowercase always.
+C-Create
 
-Variables :- Variables in programming language are used to store the value.
+R-Read
 
-How to craete a variable : using 'var' keyword
+U- Update
 
- A named memory location which is used to store values for the program is called as variable.
+D- Delete/Remove
 
- ----------------------------------------------------------------------------------------------
+C- Create Operation :
 
-               => Variable name(identifier) <=
-     
-Example :
-    var myName = "Dinesh"; 
-     
-    var a ; => Declaring a variable = Declarations
-    = 10;   => Initialize a value = initialization
+If you want to insert datas to the database or any new entry in this database we can use create operation with respect to single data and multiple datas.
 
-    var x; //declaring
-     
-    x = 10; //initialization
+R- Read Operation :
 
-    console.log(x);
+Ex. Adding a new entry in database and post new information in our account
+ After modification if we want to read the base in database we can use read opretation.
 
-    //declaring and initialization variable can be done in single line as well as differnt line.
+Ex. How many like and comment for a post 
 
-var x = 10; //declaring and initialization variable can be done in single line.
+U- Update Operation :
 
-x = 20; //reinitialize
+If we want to update any data in the database we can use update opretation 
+It is simple edit operation.
+It is strong command because if we update something it cannot restrored again
 
-x = 30; //reinitialize
+Ex. Editing it post 
 
-console.log(x);
+D- Delete/Remove Operation :
 
-// If we assign a new value to already existing variable we call is as Re-initialization.
+If we want to delete any data in the database we can use delete opretation.
+if we want to remove any data in the database we can use remove opretation
+Once it delted it cannot be restrore.
 
-var x = 40;  //re declaration
+CRUD
 
-// If we create another memory with the  name which is already existing we call it as re declaration.
+Create:
 
-// Variable Naming Rules :
+insertOne(data,options)     -> is used to insert single(one) data into to the database.
+insertMany(data,options)    -> is used to insert multiple(many) data into to the database.
 
-The 1st characters must be a letter or an understood (_) or an dollar ($).
-you cant use a number as number as the first character.
+Read:
 
-The rest of the variables name can include any letter, any number, or the underscore or dolor. Cant use any other character, inlcluding spaces.
+find(filter,options)       -> is used to find all data in to the database.   
+findOne(filter,options)    -> is used to find first data match with database.
 
-Variable names are case sensitive. 
+In read operations filter is used to apply the condition, based on that condition find command is gives all the data which match the condition.
 
-No limit to the length of the variable name. 
+FindOne one only first data match with database.
 
-You cant use one of JavaScript reserved words as variable names.
+Update:
 
-Use camel case.
+updateOne(filter,data,options) -> is used to update single data in the database.
 
---------------------------------------------------------------------------------------------------------------------------------------------------
+updateMany(filter,data,options) -> is used to update multiple datas in the database.
 
-                                   => Data Types <=
-                                /                    \
-     1.Primitive Data types                           2. Non-Primitive (referred to collectively as Objects)
-       1. Numbers                                         1. Objects
-       2. Strings                                         2. Arrays
-       3. Booleans                                        3. Functions
-       4. undefined
-       5. null
+replaceOne(filter,data,options) -> is used to replace single data in the database.
 
+DELETE:
 
-            
-// typeof: typeof is an operator in javascript which is used to get the datatype of the value.
+deleteOne(filter,options) -> is used to delete single data in the database.
 
-Examples:
+deleteMany(filter,options) -> is used to delete multiple data in the database.
 
-var x = 109;
-console.log(typeof x);
+=> To craete database we use the following:
 
-var y = "abc"; 
-console.log(typeof y);
+> Use database-name
 
-var z= false;
-console.log(typeof z);
+=> To create database we use the following:
 
-var a = undefined;
-console.log(typeof a);
+> Use students
 
----------------------------------------------------------------------------------------------------------------------------------------------------
+> switched to db students
 
-                         =>  Operators <=
+> db.studentsDetails.insertOne();
+     {collection name}
 
-Operators are used to do operations on operands.
 
+JSON: JavaScript Object Notation.
+-->JSON is a format used for storing and transporting the data.
+-->JSON is used when the data is sent from a server to a web page.
+-->JSON syntax is derived from the javascript
+-->JSON format is text.
+-->Code for reading and generating JSON data can be written in any programming language.
+-->Commenly used for API's and configs.
+--> Lightweight and easy to read and write
+-->Integrated easily with most of the language
 
-In javascript we have some differnt Operators
+JSON TYPES: 
 
-1) Arithmatic Operators
-    addition    +
-    subtraction -
-    multiply    *
-    division    /  to get qotient
-    modulus     %  to get remainder
-    exponential **
+-->Strings "hello","students"
+-->Numbers 10,1.5,-30
+-->Boolean true,false
+-->null    null
+-->Arrays  [1,2,3],["Hello","World"]
+-->Objects {"key":"values"} {"age":20}
 
-2) Assignment Operators
 
-Used to assign right side value to left memory
-    assign a value =
-    +=
-    -=
-    *=
-    /=
-    %=
-    **=
+/*
 
-    var a = 10;
-var b = 20;
+Create patient database
 
-//a=a+b;
-//a+= 30;
-//b-=5;
-//a*=6;
-//a/=2
-a+=b // addition will be done final value will be stored to left memory.
-a-=b // subtraction will be done final value will be stored to left memory.
-a*=b // multiply will be done final value will be stored to left memory.
-a/=b // division will be done final value will be stored to left memory.
-a%=b // modulo will be done final value will be stored to left memory.
-a**=b // exponantial will be done final value will be stored to left memory.
+>add 6 datas
+>update 3 datas > 3 patients discharged
+>delete any one patient
+*/
 
-console.log(a);
+Relations 
 
-3) Comparison Operators :- Used to campare the any values to get boolean output.
-    
-    equals to           (==)      checks only values
-    triple equals       (===)     checks values and Datatypes
-    Not equal to        (!=)      checks only values 
-    not double equals   (!==)     checks values and Datatypes
-    greater             (>)       checks LV is greater than RV
-    greater or equal to (>=)      checks LV is greater than or equal to RV
-    lesser              (<)       checks LV is lesser than RV
-    lesser or equal to  (<=)      checks LV is lesser than or equal to RV
+1)One to one relationship
+2)One to many relationship
+3)Many to many relationship
 
-4) Logical Operators
-
-It is used to combine multiple boolean value produce one single boolean value.
-
-    AND (&&)  Return true only if all input are true.
-    OR  (||)  Return true if any one input are true.
-    NOT  (!)  Reverse 
-
-
-
-5) Strings Operator
-
-    (+) concatinasion
-
-    Number + Number = Number
-
-    Number + String = String
-
-    Number + Boolean = Number
-
-    Number +  = Not a number (NaN) value => Number(type)
-
-    String + anything = String
-
-    Anything + String = String
-
-    Boolean + Number = Number
-
-    Boolean + String = String
-
-    Boolean + Boolean = Number
-
-    Boolean + Undefined = NaN
-
-
-6) Conditional Operator
-
-    ?
-
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-5) Flow Control Statements
-
-> Flow control statements we can control the execution flow of statements.
-
-1) DMS -> Decision making statements
-    1)if
-    2)if  else 
-    3)else if  
-    4)Switch
-
-
-2) Looping -> Looping statements
-    1)For loop
-    2)While loop
-    3)Do while loop
-
-Decision making statements
-
-Whenever we want to execute some set of statements based upon some Condition.
-
-syntax
-1)if(Condition)
+> use realations
+switched to db realations
+> db.realationDetails.insertOne(
+... {
+... "name":"dinesh",
+... "contact":8975641202,
+... "age":25
+... }
+... )
 {
-    statements;
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62874f4969636671c47d6f93")
 }
-
-flow diagram
-                   |
-                < condition > ------false
-                   |                  |
-                   |true              |
-                   |                  |
-               [ if body ]            |
-                                      |
-                 _____________________|                     
-                 |
-
-
-
-when the condition is true if body will be executed or else it will not be executed the if body.
-
-2)if else 
-
-syntax
-if(condition)
+> db.realationDetails.insertOne( { "course":"JS", "id":ObjectId("62874f4969636671c47d6f93") } )
 {
-    statements;
+        "acknowledged" : true,
+        "insertedId" : ObjectId("62874fb869636671c47d6f94")
 }
-else
+> db.realationDetails.find().pretty()
 {
-    statements;
+        "_id" : ObjectId("62874f4969636671c47d6f93"),
+        "name" : "dinesh",
+        "contact" : 8975641202,
+        "age" : 25
 }
-
-
-3) else if 
-syntax
-if(condition)
 {
-    statements;
+        "_id" : ObjectId("62874fb869636671c47d6f94"),
+        "course" : "JS",
+        "id" : ObjectId("62874f4969636671c47d6f93")
 }
-else if
+> db.realationDetails.find()
+{ "_id" : ObjectId("62874f4969636671c47d6f93"), "name" : "dinesh", "contact" : 8975641202, "age" : 25 }
+{ "_id" : ObjectId("62874fb869636671c47d6f94"), "course" : "JS", "id" : ObjectId("62874f4969636671c47d6f93") }
+> db.realationDetails.find().pretty()9
+uncaught exception: SyntaxError: unexpected token: numeric literal :
+@(shell):1:35
+> use youtube
+switched to db youtube
+> db.youtubeVideo.insertOne(
+... {
+... "topic":"mongodb",
+... "likes":"1M"
+... }
+... )
 {
-    statements;
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287549b69636671c47d6f95")
 }
-else
+> db.youtubeVideo.insertMany(
+... [
+... {
+... "name":"Ashish",
+... "age":23,
+... "id":ObjectId("6287549b69636671c47d6f95")
+... },
+... {
+... "name":"sunil",
+... "age":21,
+... "id":ObjectId("6287549b69636671c47d6f95")
+... },
+... {
+... "name":"shubham",
+... "age":25,
+... "id"ObjectId("6287549b69636671c47d6f95")
+... }
+... ]
+... )
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):16:4
+> db.youtubeVideo.insertMany( [ { "name":"Ashish", "age":23, "id":ObjectId("6287549b69636671c47d6f95") }, { "name":"sunil", "age":21, "id":ObjectId("6287549b69636671c47d6f95") }, { "name":"shubham", "age":25, "id":ObjectId("6287549b69636671c47d6f95") } ] )
 {
-
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("6287557069636671c47d6f96"),
+                ObjectId("6287557069636671c47d6f97"),
+                ObjectId("6287557069636671c47d6f98")
+        ]
 }
-----------------------------------------------------------------------------------------------------------------------------------------
-
-Condition operator:
-
-syntax
-
-Condition ? statements1 : statements2;
-
-When the condition is true statements1 is executed, or if it is false statements2 is executed.
-
-Switch Case:
-
-syntax
-Switch(variable)
+> db.youtubeVideo.find().pretty()9
+uncaught exception: SyntaxError: unexpected token: numeric literal :
+@(shell):1:31
+> db.youtubeVideo.find().pretty()
 {
-    case 1 : start;
-            break;
-    case 2: start;
-            break;
-    case 3: start;
-            break;
-            .
-            .
-            .
-            .
-            .
-    case n: start;
-            break;
-        default : start;
+        "_id" : ObjectId("6287549b69636671c47d6f95"),
+        "topic" : "mongodb",
+        "likes" : "1M"
 }
----------------------------------------------------------------------------------------------------------------------------------------
-
-2)Looping statements 
-
-Whenever we want to execute some set of statements repeatedly for multiple times
-
-1)for loop
-2)while loop
-3)do while loop
-
-1)for loop:
-
-Definition:
-Whenever we know start and end condition clearly we use for loop. For loop will execute the statements untill the end condition becomes false.
-
-syntax:
-for(start condition; end condition; counter)
 {
-    statements;
+        "_id" : ObjectId("6287557069636671c47d6f96"),
+        "name" : "Ashish",
+        "age" : 23,
+        "id" : ObjectId("6287549b69636671c47d6f95")
 }
-
-1) Increment operator ++
-    post increment a++ : Value will be assign -> Increment will done 
-    pre increment ++a :  Increment will done ->   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+        "_id" : ObjectId("6287557069636671c47d6f97"),
+        "name" : "sunil",
+        "age" : 21,
+        "id" : ObjectId("6287549b69636671c47d6f95")
+}
+{
+        "_id" : ObjectId("6287557069636671c47d6f98"),
+        "name" : "shubham",
+        "age" : 25,
+        "id" : ObjectId("6287549b69636671c47d6f95")
+}
+> db.youtubeVideo2.insertMany(
+... [
+... {
+...
+...
+>
+> db.youtubeVideo2.insertOne( { "topic":"mongodb", "likes":"1M" } )
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("628756f369636671c47d6f99")
+}
+> db.youtubeVideo2.insertOne( {"topic":"js", "likes":"2M" })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287578069636671c47d6f9a")
+}
+> db.youtubeVideo3.insertOne( {"topic":"css", "likes":"1.5M" })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("628757a369636671c47d6f9b")
+}
+> db.youtubeVideo4.insertOne( {"topic":"html", "likes":"2.5M" })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("628757c269636671c47d6f9c")
+}
+> db.youtubeVideo2.insertOne( {"name":"harish", "age":"25", "id" ObjectId("628756f369636671c47d6f99") })
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:63
+> db.youtubeVideo2.insertOne( {"name":"harish", "age":"25", "id": ObjectId("628756f369636671c47d6f99") })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287581a69636671c47d6f9d")
+}
+> db.youtubeVideo2.insertOne( {"name":"rishabh", "age":"26", "id": ObjectId("628756f369636671c47d6f99") })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287582f69636671c47d6f9e")
+}
+> db.youtubeVideo2.insertOne( {"name":"rishu", "age":"22", "id": ObjectId("628756f369636671c47d6f99") })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287583d69636671c47d6f9f")
+}
+> db.youtubeVideo3.insertOne( {"name":"kira", "age":"22", "id": ObjectId("628756f369636671c47d6f99) })
+uncaught exception: SyntaxError: "" literal not terminated before end of script :
+@(shell):1:100
+> db.youtubeVideo3.insertOne( {"name":"kira", "age":"22", "id": ObjectId("628756f369636671c47d6f99") })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287588769636671c47d6fa0")
+}
+> db.youtubeVideo3.insertOne( {"name":"ravi", "age":"21", "id": ObjectId("628756f369636671c47d6f99") })
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("6287589469636671c47d6fa1")
+}
+> db.youtubeVideo2.find().pretty()
+{
+        "_id" : ObjectId("628756f369636671c47d6f99"),
+        "topic" : "mongodb",
+        "likes" : "1M"
+}
+{
+        "_id" : ObjectId("6287578069636671c47d6f9a"),
+        "topic" : "js",
+        "likes" : "2M"
+}
+{
+        "_id" : ObjectId("6287581a69636671c47d6f9d"),
+        "name" : "harish",
+        "age" : "25",
+        "id" : ObjectId("628756f369636671c47d6f99")
+}
+{
+        "_id" : ObjectId("6287582f69636671c47d6f9e"),
+        "name" : "rishabh",
+        "age" : "26",
+        "id" : ObjectId("628756f369636671c47d6f99")
+}
+{
+        "_id" : ObjectId("6287583d69636671c47d6f9f"),
+        "name" : "rishu",
+        "age" : "22",
+        "id" : ObjectId("628756f369636671c47d6f99")
+}
+> db.youtubeVideo3.find().pretty()
+{
+        "_id" : ObjectId("628757a369636671c47d6f9b"),
+        "topic" : "css",
+        "likes" : "1.5M"
+}
+{
+        "_id" : ObjectId("6287588769636671c47d6fa0"),
+        "name" : "kira",
+        "age" : "22",
+        "id" : ObjectId("628756f369636671c47d6f99")
+}
+{
+        "_id" : ObjectId("6287589469636671c47d6fa1"),
+        "name" : "ravi",
+        "age" : "21",
+        "id" : ObjectId("628756f369636671c47d6f99")
+}
+> db.youtubeVideo4.find().pretty()
+{
+        "_id" : ObjectId("628757c269636671c47d6f9c"),
+        "topic" : "html",
+        "likes" : "2.5M"
+}
