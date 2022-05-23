@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head">SAMPLE STRUCTURE</h1>
+
+    <div>
+        <h1 class="cls1">Box Model</h1>
+        <p class="cls1">to create box model we need several different properities</p>
+    </div>
+
+    <fieldset>
+
+        <legend>Select your gender</legend>
+        <input type="radio" name="Gen" id="m"> <label for="m"> Male</label> <br>
+        <input type="radio" name="Gen" id="f"> <label for="f"> Female</label> <br>
+        <input type="radio" name="Gen" id="o"> <label for="o"> Other</label> <br>
+
+    </fieldset> <br>
+
+    <button onclick="work()">work</button>
+
+    <script >
+
+
+           function work()
+           {
+                var [head1, head2, para] = document.getElementsByClassName("cls1");
+
+                console.log(head1, head2, para);
+           }
+
+
+
+
+
+
+
+
+        //    var x = document.querySelector("#head");
+
+        //    console.log(x);
+
+
+        // var x = document.querySelectorAll(".cls1");
+
+        // console.log(x);
+
+        // var x = document.querySelector("h1");
+
+        // console.log(x);
+
+
+
+        // var head = document.getElementById("header1");
+
+        // console.log(typeof head);
+
+        // var para = document.getElementById("para");
+
+        // console.log(para);
+
+        //    var [head1, head2, para] = document.getElementsByClassName("cls1");
+
+        //    console.log(head1, head2, para);
+
+        // let options = document.getElementsByName("Gen");
+        // options.forEach((val)=>{ console.log(val)})
+
+        // var head = document.getElementsByTagName("h1");
+
+        // console.log(head);
+
+
+        
+    
+
+
+    </script>
+
+</body>
+</html>

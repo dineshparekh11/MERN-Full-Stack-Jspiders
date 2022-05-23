@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Traversing</h1>
+    <p id="para">Traversing of element means means, accessing the parent or child or sibling element of one particular element.</p>
+
+    <ol id="contents-list">
+        <li>We can traversing a parent</li>
+        <li id="mid">We can traversing a parent</li>
+        <li>We can traversing a parent</li>
+    </ol>
+
+    <script>
+
+        var list = document.getElementById("mid");
+
+        console.log(list.nextSibling);
+
+        console.log(list.previousSibling);
+
+        console.log(list.nextElementSibling);
+
+        console.log(list.previousElementSibling);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // var ol = document.getElementById("contents-list");
+
+        // console.log(ol.childElementCount);
+
+        // console.log(ol.childNodes);
+
+        // console.log(ol.children);
+
+        // console.log(ol.fistChild);
+
+        // console.log(ol.firstElementChild);
+
+        // console.log(ol.lastChild);
+
+        // console.log(ol.lastElementChild);
+
+        // console.log(ol.hasChildNodes());
+
+        // var li = document.querySelector("li");
+        // console.log(li.parentElement);
+        // console.log(li.parentNode);
+        // var head = document.getElementById("header");
+
+        // console.log(head.parentElement);
+
+
+
+    </script>
+</body>
+</html>
