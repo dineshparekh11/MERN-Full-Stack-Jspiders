@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Food list</h1>
+    <hr>
+    <h2>Veg food</h2>
+    <ol>
+        <li>Upma</li>
+        <li>idli</li>
+        <li>Vada</li>
+        <li>Masala Dose</li>
+        <li>Pulav</li>
+    </ol>
+
+    <input type="text" placeholder="enter food"> <br><br>
+    <input type="text" placeholder="enter position"> <br><br>
+
+    <button onclick="add()">add</button>
+    <button onclick="replace()">replace</button>
+    <button onclick="remove()">delete</button>
+
+
+
+
+    <script>
+
+        function add()
+        {
+            var food = document.querySelector("input").value;
+            var newList =  document.createElement("li");
+            newList.innerText = food;
+
+            var ol =document.querySelector("ol");
+            
+            // ol.insertBefore(newList , ol.lastElementChild.previousElementSibling)
+
+            // ol.replaceChild(newList, ol.lastElementChild)
+
+            // ol.removeChild(ol.lastElementChild)
+
+            
+
+
+
+
+        }
+
+    </script>
+
+
+</body>
+</html>
